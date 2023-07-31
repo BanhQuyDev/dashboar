@@ -12,24 +12,9 @@ const navConfig = [
     icon: icon('ic_analytics'),
   },
   {
-    title: 'Người dùng',
+    title: 'Đơn hàng',
     path: '/dashboard/user',
     icon: icon('ic_user'),
-  },
-  {
-    title: 'Sản phẩm',
-    path: '/dashboard/products',
-    icon: icon('ic_cart'),
-  },
-  {
-    title: 'Bài viết',
-    path: '/dashboard/blog',
-    icon: icon('ic_blog'),
-  },
-  {
-    title: 'login',
-    path: '/login',
-    icon: icon('ic_lock'),
   }
 ];
 

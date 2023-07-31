@@ -33,44 +33,41 @@ export default function DashboardAppPage() {
 
         <Grid container spacing={3}>
           <Grid item xs={12} sm={6} md={3}>
-            <AppWidgetSummary title="Tổng người dùng" total={100} icon={'ant-design:user-outlined'} />
+            <AppWidgetSummary title="Tổng người dùng" total={30} icon={'ant-design:user-outlined'} />
           </Grid>
 
           <Grid item xs={12} sm={6} md={3}>
-            <AppWidgetSummary title="Tổng doanh thu " total={1352831} color="info" icon={'ant-design:dollar-outlined'} />
+            <AppWidgetSummary title="Tổng doanh thu " total={1126300} color="info" icon={'ant-design:dollar-outlined'} />
           </Grid>
 
           <Grid item xs={12} sm={6} md={3}>
-            <AppWidgetSummary title="Tổng đơn hàng" total={30} color="warning" icon={'ant-design:dropbox-outlined'} />
+            <AppWidgetSummary title="Tổng đơn hàng" total={23} color="warning" icon={'ant-design:dropbox-outlined'} />
           </Grid>
 
           <Grid item xs={12} sm={6} md={3}>
-            <AppWidgetSummary title="Tổng thành viên premium" total={30} color="error" icon={'ant-design:sketch-outlined'} />
+            <AppWidgetSummary title="Tổng thành viên premium" total={6} color="error" icon={'ant-design:sketch-outlined'} />
           </Grid>
 
           <Grid item xs={12} md={6} lg={8}>
             <AppWebsiteVisits
-              title="Doanh Thu Theo Từng Tháng"
-              subheader="(+43%) Hơn Với Năm Ngoái"
+              title="Tổng số lượng sản phẩm đã bán trong quý III"
+              subheader=""
               chartLabels={[
-                '02/01/2023',
-                '01/01/2023',
-                '03/01/2023',
-                '04/01/2023',
-                '05/01/2023',
-                '06/01/2023',
-                '07/01/2023',
-                '08/01/2023',
-                '09/01/2023',
-                '10/01/2023',
-                '11/01/2023',
+                'Bông tẩy trang',
+                'Chống nắng',
+                'Combo kem dưỡng',
+                'Kem dưỡng',
+                'Nước tẩy trang',
+                'Mặt nạ',
+                'Sửa rửa mặt',
+                'Serum'
               ]}
               chartData={[
                 {
-                  name: 'Tổng doanh thu theo tháng',
+                  name: 'Tổng số lượng của sản phẩm bán ra',
                   type: 'column',
                   fill: 'solid',
-                  data: [230000, 110000, 220000, 270000, 130000, 220000, 370000, 210000, 440000, 220000, 300000],
+                  data: [2, 4, 5, 3, 4, 3, 2, 1],
                 },
               ]}
             />
@@ -80,8 +77,8 @@ export default function DashboardAppPage() {
             <AppCurrentVisits
               title="Biểu đồ premium và normal"
               chartData={[
-                { label: 'Premium', value: 30 },
-                { label: 'Normal', value: 100 },
+                { label: 'Premium', value: 6 },
+                { label: 'Normal', value: 30 },
               ]}
               chartColors={[
                 theme.palette.warning.main,
@@ -115,13 +112,13 @@ export default function DashboardAppPage() {
               list={[
                 {
                   name: 'FaceBook',
-                  value: 942,
+                  value: 777,
                   icon: <Iconify icon={'eva:facebook-fill'} color="#1877F2" width={32} />,
                 },
                 {
                   name: 'Instagram',
                   value: 341212,
-                  icon: <InstagramOutlined/>,
+                  icon: <InstagramOutlined />,
                 },
                 {
                   name: 'Linkedin',
