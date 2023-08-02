@@ -105,34 +105,6 @@ export default function DashboardAppPage() {
               ]}
             />
           </Grid>
-
-          <Grid item xs={12} md={6} lg={4}>
-            <AppTrafficBySite
-              title="Thông tin mạng xã hội"
-              list={[
-                {
-                  name: 'FaceBook',
-                  value: 777,
-                  icon: <Iconify icon={'eva:facebook-fill'} color="#1877F2" width={32} />,
-                },
-                {
-                  name: 'Instagram',
-                  value: 341212,
-                  icon: <InstagramOutlined />,
-                },
-                {
-                  name: 'Linkedin',
-                  value: 411213,
-                  icon: <Iconify icon={'eva:linkedin-fill'} color="#006097" width={32} />,
-                },
-                {
-                  name: 'Twitter',
-                  value: 443232,
-                  icon: <Iconify icon={'eva:twitter-fill'} color="#1C9CEA" width={32} />,
-                },
-              ]}
-            />
-          </Grid>
         </Grid>
       </Container>
     </>
